@@ -1,0 +1,77 @@
+/* Fade-in animation for the popup overlay */
+@keyframes fadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+  }
+}
+
+/* Popup container */
+.new-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.3s ease-out;
+  z-index: 1000;
+  max-width: 90%;
+  width: 400px;
+}
+
+/* Heading styling */
+.new-popup h5 {
+  color: white;
+  margin-top: 0;
+  padding: 1% 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Inner content alignment */
+.new-popup-inner {
+  text-align: center;
+}
+
+/* Title inside popup */
+.new-popup-inner h2 {
+  margin: 0;
+  color: white;
+}
+
+/* Button styling inside popup */
+.new-popup-inner button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.new-popup-inner button:hover {
+  background-color: #ddd;
+}
+
+/* QR Code container */
+.qr-code {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Actual QR code styling */
+.QRCode {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: white;
+}
